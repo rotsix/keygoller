@@ -1,4 +1,4 @@
-module github.com/rotsix/keygoller
+module keygoller
 
 go 1.14
 

@@ -6,11 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/rotsix/keygoller/pkg/net"
-
-	"github.com/rotsix/keygoller/pkg/keyboard"
-
 	"github.com/MarinX/keylogger"
+	"github.com/rotsix/keygoller/keyboard"
+	"github.com/rotsix/keygoller/net"
 )
 
 func main() {
