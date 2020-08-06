@@ -31,3 +31,11 @@ Usage of keygoller:
   -user string
     	user to connect with (default "username")
 ```
+
+It only works on Linux for now, and must be run as root.
+
+The logger supports the following protocols:
+
+- debug: print to `stdout`
+- IRC: fill the `-host`, `-port`, `-channel` and `-user` flags
+- HTTP: not yet
