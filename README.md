@@ -37,5 +37,5 @@ It only works on Linux for now, and must be run as root.
 The logger supports the following protocols:
 
 - debug: print to `stdout`
-- IRC: fill the `-host`, `-port`, `-channel` and `-user` flags
+- IRC: pass the `-host`, `-port`, `-channel` and `-user` options
 - HTTP: not yet
